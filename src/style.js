@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-
+//createGlobalStyle 创建全局字体样式，结合iconfont
 export const GlobalStyle = createGlobalStyle`
 	html, body, div, span, applet, object, iframe,
 	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -29,7 +29,7 @@ export const GlobalStyle = createGlobalStyle`
 	body {
 		line-height: 1;
 	}
-	html, body{
+	html, body {
 		background: #f2f3f4;;
 	}
 	ol, ul {
@@ -47,8 +47,8 @@ export const GlobalStyle = createGlobalStyle`
 		border-collapse: collapse;
 		border-spacing: 0;
 	}
-	a{
+	a {
 		text-decoration: none;
 		color: #fff;
 	}
-`;
+`
