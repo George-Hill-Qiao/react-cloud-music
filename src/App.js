@@ -7,13 +7,16 @@ import { HashRouter } from "react-router-dom";//hash路由
 import { renderRoutes } from "react-router-config";
 import store from "./store/index";
 import { Provider } from "react-redux";//所有容器能够访问到store
+import { Data } from "./application/Singers/cache-data";
 function App () {
   return (
     <Provider store={store}>
       <HashRouter>
         <GlobalStyle></GlobalStyle>
         <IconStyle></IconStyle>
-        {renderRoutes(routes)}
+        <Data>
+          {renderRoutes(routes)}
+        </Data>
       </HashRouter>
     </Provider>
   );
